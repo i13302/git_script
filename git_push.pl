@@ -7,6 +7,7 @@ $github_path="/home/t552/github/";
 	["html","./tweet/main/user.php"],
 	["html","./streaming/main/user.php"],
 #	["myscript","./rename_*.sh"],
+	["myscript","./git.pl"],
 );
 #=== exclusion ===#
 
@@ -29,12 +30,15 @@ foreach my $my_file (@file){
 	$git_log=`git log`;
 	my @r_git_log=split(/\n/,$git_log);
 
-	print $my_file;
-	print @r_git_log[4]."\n";
+	QUTESTION:
+	{
+		print $my_file;
+		print @r_git_log[4]."\n";
 
-	print "Do you exchange ? [YES/END] :";
-	$change=<STDIN>;
-	chomp($change);
+		print "Do you exchange ? [YES/NO/END] :";
+		$change=<STDIN>;
+		chomp($change);
+	}
 
 	if($change eq "YES"){
 
@@ -67,6 +71,10 @@ foreach my $my_file (@file){
 		print "\n";
 	}elsif($change eq "END"){
 		last;	
+	}elsif($change eq "NO"){
+		next;	
+	}else{
+		goto QUTESTION;	
 	}
 	
 	chdir "../";
