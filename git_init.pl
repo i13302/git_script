@@ -1,9 +1,9 @@
 #!/usr/bin/perl
 
-#$init_Lpath"";
-#chdir $init_Lpath;
+$init_Lpath=$ARGV[0];
+chdir $init_Lpath;
 
-$remote_path=$ARGV[0];
+$remote_path=$ARGV[1];
 
 $USER="Hukanzen";
 $PASS="6268ad596406d28b3558144edd559d2a5c027d23";
