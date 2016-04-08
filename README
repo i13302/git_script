@@ -13,3 +13,7 @@ a)	"git_init.pl" can "git init","git add","git commit","git remote add" and "git
 a1)	This program need local path and remote path.
  
 b)	"git_push.pl" can "git rm --cashed filename","git commit -m sentence","git push".
+
+#==== Attention ===#
+branch is only "master".
+if you don't like,pls you do remodeling.
