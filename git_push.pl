@@ -23,11 +23,15 @@ foreach my $my_file (@file){
 		next;
 	}
 
-	chdir $my_file;	
+	chdir $my_file;
+	print "NOW DIR : ".$my_file;
+#	print "ARE YOU OK?:";
+#	$que=<STDIN>;
+	print "\n";
 
 
 	#=== watch commit ===#
-	$git_log=`git log`;
+	my $git_log=`git log`;
 	my @r_git_log=split(/\n/,$git_log);
 
 	QUTESTION:
