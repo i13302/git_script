@@ -65,7 +65,7 @@ foreach my $my_file (@file){
 		system($git_commit);
 		
 		#=== push ===#
-		$git_push="git push ".$my_file." master";
+		$git_push="git push -u ".$my_file." master";
 		print $git_push."\n";
 		system($git_push);
 		
