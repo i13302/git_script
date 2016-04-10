@@ -7,7 +7,7 @@ $github_path="/home/t552/github/";
 	["html","./tweet/main/user.php"],
 	["html","./streaming/main/user.php"],
 #	["myscript","./rename_*.sh"],
-	["myscript","./git.pl"],
+#	["myscript","./git.pl"],
 );
 #=== exclusion ===#
 
@@ -43,15 +43,16 @@ foreach my $my_file (@file){
 	if($change eq "YES"){
 
 		#===git add all file ===#
-		system("git add *");
+		system("git add -u *");
 
-		for(my $i=0;$exclusion[$i][0];$i++){
-			if($my_file eq $exclusion[$i][0]){
-				$s=sprintf("git rm --cached %s",$exclusion[$i][1]);
-				#print $s;
-				system($s);
-			}
-		}
+		#= option u =
+		#for(my $i=0;$exclusion[$i][0];$i++){
+		#	if($my_file eq $exclusion[$i][0]){
+		#		$s=sprintf("git rm --cached %s",$exclusion[$i][1]);
+		#		#print $s;
+		#		system($s);
+		#	}
+		#}
 
 	
 		#=== new commit ===#	
