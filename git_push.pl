@@ -43,7 +43,7 @@ foreach my $my_file (@file){
 	if($change eq "YES"){
 
 		#===git add all file ===#
-		system("git add -u *");
+		system("git add -A *");
 
 		#= option u =
 		#for(my $i=0;$exclusion[$i][0];$i++){
