@@ -74,15 +74,16 @@ foreach my $my_file (@file){
 		system($git_push);
 		
 		print "\n";
+		chdir "../";
 	}elsif($change eq "END"){
 		last;	
 	}elsif($change eq "NO"){
+		chdir "../";
 		next;	
 	}else{
 		goto QUTESTION;	
 	}
 	
-	chdir "../";
 
 }
 
