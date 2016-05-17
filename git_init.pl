@@ -17,7 +17,7 @@ if($init_Lpath eq ''){
 }
 
 $USER="i13302";
-$PASS="f15c4f0768a6ddc603f9435a76ddb697f575213d";
+$PASS="xxx";
 
 #=== git init ===#
 $git_init="git init";
