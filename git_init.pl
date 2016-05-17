@@ -10,8 +10,14 @@ chdir $init_Lpath;
 
 $remote_path=$ARGV[1];
 
-$USER="Hukanzen";
-$PASS="7a585223c7ccb7f90010a74b8945952cac24b347";
+if($init_Lpath eq ''){
+	exit;
+}elsif($remote_path eq ''){
+	exit;
+}
+
+$USER="i13302";
+$PASS="f15c4f0768a6ddc603f9435a76ddb697f575213d";
 
 #=== git init ===#
 $git_init="git init";

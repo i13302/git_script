@@ -1,11 +1,11 @@
 #!/usr/bin/perl
 
-$github_path="/home/t552/github/";
+$github_path="/home/Main/github/";
 
 #=== exclusion ===#
 @exclusion=(
-	["html","./tweet/main/user.php"],
-	["html","./streaming/main/user.php"],
+#	["html","./tweet/main/user.php"],
+#	["html","./streaming/main/user.php"],
 #	["myscript","./rename_*.sh"],
 #	["myscript","./git.pl"],
 );
