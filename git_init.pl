@@ -4,19 +4,21 @@
 # 1st argument is local path where you want to init .
 # 2nd argument is remote path where you want to init . 
 #
+#my $init_Lpath="/mnt/c/Users/Takehara/Documents/kenkyu_Github/Server_Script";
+#my $remote_path="";
 
-$init_Lpath=$ARGV[0];
+my $init_Lpath=$ARGV[0];
 chdir $init_Lpath;
 
-$remote_path=$ARGV[1];
+my $remote_path=$ARGV[1];
 
-if($init_Lpath eq ''){
-	exit;
-}elsif($remote_path eq ''){
-	exit;
+if($init_Lpath eq ""){
+	exit 1;
+}elsif($remote_path eq ""){
+	exit 2;
 }
 
-$USER="i13302";
+$USER="xxx";
 $PASS="xxx";
 
 #=== git init ===#
